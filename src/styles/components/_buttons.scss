@@ -1,0 +1,46 @@
+.btn {
+    display: flex;
+    background-color: transparent;
+    border:none;
+    color:white;
+    cursor: pointer;
+    font-size: 12px;
+    padding:10px 10px 10px 10px;
+    
+
+    &:focus{
+        outline: none;
+    }
+    
+}
+.btn__container{
+    display: flex;
+    width: 200px;
+    margin-left: 30%;
+}
+.btn-primary{
+    background-color: $blue-upload;
+    border-radius: 5px;
+    margin-left: 11px;
+    margin-top: 10px;
+
+    &:disabled{
+        background-color: lighten($color: $blue-upload, $amount: 1);
+    }
+    &:hover{
+        background-color:darken($color: $blue-upload, $amount: 15);
+    }
+}
+
+.btn-send{
+    background-color: $green-send;
+    border-radius: 5px;
+    margin-left: 41%;
+    margin-top: 25px;
+    &:disabled{
+        background-color: lighten($color: $green-send, $amount: 1);
+    }
+    &:hover{
+        background-color:darken($color: $green-send, $amount: 15);
+    }
+}
